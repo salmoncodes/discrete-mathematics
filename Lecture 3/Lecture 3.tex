@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{mathtools, amssymb, amsthm} % imports amsmath
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Predicates and Quantifiers}
+\rhead{Lecture 3}
+
+\begin{document}
+\section{Predicate Logic}
+\fbox{\strut Predicates are statements involving variables (x $>$ 3, "Student x is eating lunch.")}\\
+
+\textbf{x $>$ 3}
+\\x is considered the subject of the statement.\\
+x, or the Predicate, is greater than 3 (of a property.)\\
+p(x) can be called the value of the propositional function p at x.\\
+\\Once the value is assigned to x, p(x) becomes a proposition and has a truth value.\\
+
+\textbf{p(x) for x $>$ 3}
+\begin{center}
+    p(4): sets x = 4. 4 $>$ 3, which is true.\\
+    p(2): sets x = 2. 2 $>$ 3, which is false.
+\end{center}
+
+\section{N-ary Predicate}
+It is a statement with n variables.\\$p(x_{1}, x_{2},...,x_{n})$, which is the value of the propositional function p at the nth tuple.
+
+\section{Quantifiers}
+\fbox{\strut Keywords: all, some, many, none, few}\\
+
+There are two types:
+\begin{enumerate}
+    \item
+    Universal $\forall$xp(x): A predicate is true for every element under consideration.\\
+    \\p(x) for all values of x in the domain, for all x p(x), or for every x p(x)\\
+    \\This statement is false if and only if p(x) is not always true. The element that makes p(x) false 
+    is a counterexample.
+
+    \item
+    Existential $\exists$xp(x): A predicate is true for there is one or more elements under consideration.\\
+    \\There exists an element x in the domain such that p(x) = true. Also can be "for some, for at least one,
+    there exists, there is."\\There is an x such that p(x), there is at least one x such that p(x), for some x p(x)
+\end{enumerate}
+\end{document}
