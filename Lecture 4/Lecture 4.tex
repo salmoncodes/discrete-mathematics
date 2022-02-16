@@ -1,0 +1,137 @@
+\documentclass{article}
+\usepackage{mathtools, amssymb, amsthm} % imports amsmath
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{More Quantifiers and Logical Equivalences}
+\rhead{Lecture 4}
+
+\begin{document}
+
+\section{Uniqueness Quantifier $\exists$! $\exists_{1}$}
+\fbox{\strut There exists a unique x that p(x) is true, there is exactly 1, there is one and only one.}\\
+\\
+If p(x) denotes "$x+1=0$ and x is an integer, then $\exists$!xP(x) is true because only one unique x can make the equation true.\\
+If p(x) denotes "$x > 0$, then $\exists$!xP(x) is false because there are many x values that can make this true.
+
+\section{Quantifiers with Restricted Domains}
+\begin{enumerate}
+    \item
+        \begin{displaymath}
+        \forall x < 0, x^{2} > 0 \to \forall x(x<0\to x^{2}>0)
+        \end{displaymath}
+
+    \item
+        \begin{displaymath}
+        \forall y \neq 0, y^{3} \neq 0 \to \forall y(y\neq 0 \to y^{3}\neq 0)
+        \end{displaymath}
+
+    \item
+        \begin{displaymath}
+        \exists z > 0, z^{2} = 2 \to \exists z(z > 0 \wedge z^{2}=2)
+        \end{displaymath}
+\end{enumerate}
+
+\section{Precedence of Quantifiers}
+$\forall$ and $\exists$ have higher precedence than all logical operators.\\
+
+\begin{displaymath}
+\forall x p(x)\vee q(x) \equiv (\forall x p(x))\vee q(x) \text{ instead of } \forall x (p(x)\vee q(x))
+\end{displaymath}
+
+\section{Binding Variables}
+\fbox{
+    \parbox{\textwidth}{
+        When a quantifier is used on the variable x, this occurence of the variable is bound.
+        If it is not bound, then it is free.
+    }
+}
+\\
+\\
+The variables that occur in a propositional function of a predicate calculus must be bound or set to a particular value to turn to a proposition.\\
+The part of a logical expression where the quantifier is applied = the scope of the quantifier.
+
+TODO Add Examples...
+
+\pagebreak
+\section{Translating from English to Logic}
+\fbox{
+    \strut Translate to predicate logic: "Every student in this class has taken a course in Java."
+}
+\\
+\\
+\textbf{1. Decide on domain U.}
+\begin{enumerate}
+    \item
+    U is all students in the class:\\
+    J(x) will denote "x has taken a course in Java" $\to \forall xJ(x)$ (For all students in this class, x student has taken a course in Java).\\
+
+    \item
+    U is all people:\\
+    S(x) denotes "x is a student in the class" and J(x) denotes "x has taken a course in Java".\\
+    Therefore, it translates to $\forall x(S(x)\to J(x))$ (For all people who are a student in this class, x student has taken a course in Java.)\\
+\end{enumerate}
+
+\fbox{
+    \strut Translate to predicate logic: "Some students in this class has taken a course in Java."
+}
+\\
+\\
+\textbf{1. Decide on domain U.}
+\begin{enumerate}
+    \item
+    U is all the students in the class:\\
+    $\exists xJ(x) \to$ There exists x student in this class that has taken a course in Java.
+    \item
+    U is all people:\\
+    $\exists x(S(x)\wedge J(x)) \to$ There exists x person who is a student in this class and has taken a course in Java.\\
+\end{enumerate}
+
+\fbox{
+    \strut Every student in this class has studied calculus.
+}
+\\
+\\
+1. Introduce x into the statement.\\
+\indent For every student x in this class, x has studied calculus.\\
+2. Let c(x) represent "x (student) has studied calculus".\\
+\indent $\forall xc(x)$\\
+3. Let s(x) represent "x (all people) is a student in this class".\\
+\indent $\forall xs(x)$\\
+4. $\forall xs(x) \to c(x) \to$ For every x person, x is a student in this class, thus has studied calculus.\\
+5. $\forall xs(x)\wedge c(x) \to$ For every x person, x is a student in this class and has studied calculus.\\
+
+\pagebreak
+\section{Logical Equivalences}
+$S\equiv T$: Statements S and T involving predicates and quantifiers are logically equivalent.\\
+\indent If and only if they have the same truth value no matter what is substituted into these statements and the domain used for variables.\\
+
+
+\fbox{
+    \parbox{\textwidth}{
+        \begin{center}
+        $\forall x(p(x)\wedge q(x))\equiv x p(x)\wedge \forall xq(x)$\\
+        $\forall x(p(x)\wedge q(x))\equiv \forall xp(x)\wedge \forall xq(x)$
+        \end{center}
+    }
+}
+\\
+\\
+These two statements must take the same truth value no matter what p and q is and no matter what domain is used.\\
+
+\section{Negating Quantified Expressions}
+\begin{center}
+\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}| }
+    \hline
+    Negation & Equivalent Statement & When is Negation True? & When is Negation False?\\
+    \hline
+    $\neg \exists xP(x)$ & $\forall x\neg P(x)$ & For every x, P(x) is false. & There is an x for which P(x) is true.\\
+    \hline
+    $\neg \forall xP(x)$ & $\exists x\neg P(x)$ & There is an x for which P(x) is false. & P(x) is true for every x.\\
+    \hline
+\end{tabular}
+\end{center}
+
+
+\end{document}
