@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  15 FEB 2022 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.14)  15 FEB 2022 20:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -192,21 +192,119 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \Gin@req@height=\dimen160
 \Gin@req@width=\dimen161
-) [1{C:/Users/angel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+ (C:\Users\angel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+ (C:\Users\angel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 14--23
 
-] (Lecture 5.aux) ) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--67
+
+ []
+
+[1{C:/Users/angel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 73--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+[2] [3] (Lecture 5.aux) ) 
 Here is how much of TeX's memory you used:
- 3322 strings out of 478584
- 51932 string characters out of 2844401
- 342923 words of memory out of 3000000
- 21508 multiletter control sequences out of 15000+600000
- 469864 words of font info for 30 fonts, out of 8000000 for 9000
+ 3353 strings out of 478584
+ 52499 string characters out of 2844401
+ 347923 words of memory out of 3000000
+ 21526 multiletter control sequences out of 15000+600000
+ 471563 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,11n,76p,306b,213s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on "Lecture 5.pdf" (1 page, 32338 bytes).
+<C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/angel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "Lecture 5.pdf" (3 pages, 60783 bytes).
 PDF statistics:
- 16 PDF objects out of 1000 (max. 8388607)
+ 32 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

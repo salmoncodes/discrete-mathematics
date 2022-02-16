@@ -11,39 +11,101 @@
 
 \section{Nested Quantifiers}
 
-TODO 
+Let the domain be all real numbers:\\
+\\
+$\forall x\exists y(x+y)=0$\\
+This is the same as:\\
+$\forall xq(x)$ where q(x) is $\exists yp(x,y)$ and p(x,y) is x+y=0\\
+\\
+$\forall x\forall y(x + y = y + x)$\\
+$\forall x\forall y\forall z(x + (y + z) = (x + y) + z)$\\
+$\forall x\forall y((x > 0)\wedge(y<0)\to (xy<0))$
 
 \section{Quantification as Loop}
+\begin{enumerate}
+    \item
+    $\forall x\forall yp(x,y) \to$ For every x, for every y\\
+    \\
+    While looping through x, each x loops through y\\
+    If p(x,y) is true for all x and y, then the statement is true.\\
+    However, if x for p(x, y) is false, then the statement is false.\\
 
-TODO
+    \item
+    $\forall x\exists yp(x,y) \to$ For every x, y exists\\
+    \\
+    Loop through x until a y makes p(x,y) true.\\
+    If for every x there is a y that makes p(x,y) true, then the statement is true.\\
+    However, if some x's doesn't have a y that makes p(x,y) true, then the statement is false.\\
+
+    \item
+    $\exists x\forall yp(x,y) \to$ There exists an x, for every y\\
+    \\
+    Loop through x until there is an x for which p(x,y) is always true when we loop through all values for y.\\
+    It is true if there is an x that meets this criteria. False if there is no x.\\
+
+    \item
+    $\exists x\exists yp(x,y) \to$ For an x that exists, y exists\\
+    \\
+    Loop through x for where each x, loop through y until there is an x where y makes p(x,y) is true.\\
+    This is false if there is no x with a y that makes p(x,y) true.\\
+\end{enumerate}
 
 \section{Order of Quantification}
 
-TODO
+\fbox{
+    \strut Let p(x,y) be "x + y = y + x" and the domain is all real numbers.
+}
+\\
+\\
+Is the statement "$\forall x\forall yp(x,y) \equiv \forall y\forall xp(x,y)$" true?\\
+\\
+$\forall x\forall yp(x,y) \to$ For all real numbers of x, for all real numbers of y, x + y = y + x.\\
+Since p(x,y) is true for all numbers x and y, $\forall x\forall yp(x,y)$ is true.\\
+\\
+$\forall y\forall xp(x,y) \to$ For all real numbers of y, for all real numbers of x, x + y = y + x.\\
+This has the same meaning as the statement above, therefore the statements are equivalent.\\
 
-\section{Quantification of Two Variables}
-
-TODO
-
-\section{Quantification with More Variables}
-
-TODO
 
 \section{Translating Mathematical Statements}
 
-TODO
+\fbox{
+    \strut The sum of two positive integers is always positive.
+}
+\\
+\\
+Translating this would be:\\
+\\
+$\forall x\forall y((x > 0 \wedge y > 0) \to (x +y > 0))$ and the domain is all integers for both variables.\\
+$\forall x\forall y(x+y>0) \to$ For every x that is a positive integer, adding x to every y that is a positive integer will always be greater than 0.\\
 
-\section{Express Limit Using Quantifiers}
-
-TODO
 
 \section{Translating Statements into English}
 
-TODO
+\begin{center}
+    $\forall x(c(x)\vee \exists y(c(y)\wedge f(x,y)))$
+\end{center}
 
+\begin{enumerate}
+    \item
+    c(x) = "x has a computer", f(x,y) = "x and y are friends", domain = all students at the school\\
+    
+    \item
+    For every x student in the school, x student has a computer or there exists y student with a computer and is friends with x student.
+\end{enumerate}
+
+\pagebreak
 \section{Negating Nested Quantifiers}
 
-TODO
+\begin{center}
+
+    $\neg \forall x\exists y(xy = 1)$
+\\
+    $\equiv \exists x\neg \exists y(xy = 1)$
+\\
+    $\equiv \exists x\forall y\neg (xy=1)$
+\\
+    $\equiv \exists x\forall y(xy\neq 1)$
+\end{center}
 
 
 
